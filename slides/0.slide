@@ -1,0 +1,148 @@
+# The Go programming Language
+Thursday Developer Meeting @ NOI Techpark
+18:30 4 Nov 2021
+Summary: Introduction to the Go programming language
+
+Daniel Morandini
+Software Developer, KIM Keep In Mind GmbH
+SEIS Master Student, Free University of Bolzano/Bozen
+danielmorandini@keepinmind.info
+
+## About me, Go and KIM
+Messing around since 2015
+```json
+{
+  "author_name": "Daniel Morandini",
+  "created_at": "2015-07-29T17:33:16+02:00",
+  "short_id": "204d4ee9",
+  "title": "Daniel's FIRST COMMIT: I hope I don't create a mess here, let's try.",
+  "project": {"id": "9", "path": "ios/Dolomiten-App"}
+}
+```
+
+Our first Go project that reached production!
+```json
+{
+  "author_name": "Daniel Morandini",
+  "created_at": "2018-01-31T13:46:45+01:00",
+  "short_id": "4baa93ee",
+  "title": "Add dep manager. Add gitignore",
+  "project": {"id": "102", "path": "youtv/cutter-uploader"}
+}
+```
+
+## How we'll spend our time
+1. History
+3. Notable Go Projects
+4. A [Tour of Go](https://tour.golang.org/welcome/1)
+5. DEMO: Project structure, Tooling, $GOPATH and $GO111MODULE
+
+Optional stuff, open discussion
+- Must-read literature for the novel Gopher
+- Go @ KIM!
+
+.image images/gopher.png _ 110
+.caption _Gopher_ by [[https://instagram.com/reneefrench][Renee French]]
+
+## History
+Designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Released
+to the public on November 10, 2009.
+
+.video videos/go-promo.mp4 video/mp4 _ 600
+.caption Official Go promotional video, by Russ Cox
+
+## Notable Go projects (3)
+## Notable Go projects: Docker (2013)
+
+From [reddit, Why is Docker written in Go?](https://www.reddit.com/r/docker/comments/1w2aco/comment/cey2ymt/?utm_source=share&utm_medium=web2x&context=3)
+
+	Have you ever deployed a Python application to prod? Especially make
+	sure that your deployment will be the same and will work no matter which OS
+	(and existing Python version) is running? It's a pain.
+
+	Compiling go code produces a statically linked binary that you just
+	literally have to "drop" on your server, and it works.
+
+.image images/docker.png _ 300
+.caption LXC and more, [[https://github.com/moby/moby][source code]]
+
+## Notable Go projects: Prometheus (2012)
+From [Grafana Labs, Where and Why We Use Go](https://grafana.com/blog/2015/08/21/where-and-why-we-use-go/)
+
+	It’s fast. It’s not going to be as quick as a well written C program,
+	but you can write a Go program a lot faster than a C program. At the same time,
+	it’ll be a lot faster than an equivalent program in perl or ruby.
+
+	... 7 bullet points later...
+
+	This is purely a personal preference, but I enjoy working in Go.
+
+.image images/prometheus.png _ 200
+.caption Prometheus, metrics and monitoring, [[https://github.com/prometheus/prometheus][source code]]
+
+## Notable Go projects: Terraform (2014)
+From [Medium, What’s With All the Go?](https://medium.com/hashicorp-engineering/whats-with-all-the-go-ca72c6d47e26)
+
+	Have you ever searched an open source Python project’s Bugzilla for
+	issues with status CLOSED-WONTFIX or CLOSED-WORKSFORME? A lot of these issues
+	are due to dependencies or volatile dynamic resources that can’t easily be
+	tested by developers.
+
+.image images/terraform.png _ 300
+.caption Terraform by Hashicorp: Infrastructure as Code, [[https://github.com/hashicorp][hashicorp's company directory code]]
+
+## A Tour of Go
+: Objective: Being able to READ Go code!
+
+## Language features, condensed
+- statically typed, statically linked
+- native cross compilation ($GOOS, $GOARCH)
+- garbage collected
+- goroutines for concurrent programs
+- memory channels for syncronization
+- implicit interfaces
+- embedding over inheritance
+
+## Milestone 1: Hello main, packages and import!
+.play code/hello.go
+: About package, main function and imports
+
+## Milestone 2: Literals and Type inference!
+.play -edit -numbers code/lit.go
+
+## Milestone 3: Functions!
+.play -edit -numbers code/func.go
+
+## Milestone 4: Multiple return values & Error handling!
+.play -edit -numbers code/err.go
+
+## Milestone 5: POINTERS!!!
+.play -edit -numbers code/ptr.go
+
+## Milestone 6: Structures!
+.play -edit -numbers code/struct.go /I OMIT/,/O OMIT/
+
+## Milestone 7: Receivers, Methods... Interfaces! (1/2)
+Describe what is needed
+
+.code -numbers code/abstraction.go /FI OMIT/,/FO OMIT/
+
+Ask for an interface instead of an actual struct!
+
+.code -numbers code/abstraction.go /II OMIT/,/IO OMIT/
+
+## Milestone 7: Receivers, Methods... Interfaces! (2/2)
+Provide implementations (implicit!)
+
+.code -numbers code/abstraction.go /FMNI OMIT/,/FMNO OMIT/
+
+.play -edit -numbers code/abstraction.go /MI OMIT/,/MO OMIT/
+
+## TERMINAL TIME
+
+## YouTV: cutter-uploader (Jan 2018)
+
+## YouTV: recommender (Oct 2018)
+
+## Video-Taxi: livesub (Mar 2020)
+
