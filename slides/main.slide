@@ -10,7 +10,7 @@ danielmorandini@keepinmind.info
 
 ## About me, Go and KIM
 Messing around since 2015
-```json
+```
 {
   "author_name": "Daniel Morandini",
   "created_at": "2015-07-29T17:33:16+02:00",
@@ -21,7 +21,7 @@ Messing around since 2015
 ```
 
 Our first Go project that reached production!
-```json
+```
 {
   "author_name": "Daniel Morandini",
   "created_at": "2018-01-31T13:46:45+01:00",
@@ -140,9 +140,23 @@ Provide implementations (implicit!)
 
 ## TERMINAL TIME
 
+## Open Discussion
+## A must!
+.link https://pkg.go.dev
+.link https://golang.org
+.link https://golang.org/doc/effective_go
+.link https://research.swtch.com
+.link https://tour.golang.org
+
+## Go @ KIM
 ## YouTV: cutter-uploader (Jan 2018)
+
+.image images/cutter-uploader.png _ 760
 
 ## YouTV: recommender (Oct 2018)
 
+.image images/recommender.png _ 750
+
 ## Video-Taxi: livesub (Mar 2020)
 
+.image images/livesub.png _ 600
