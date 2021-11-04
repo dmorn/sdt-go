@@ -23,7 +23,7 @@ func NewItem(id string) Item {
 
 func main() {
 	i := NewItem("abc")
-	latitude, longitude, precision := i.Position()
+	latitude, longitude, precision := i.GPS.Position()
 	fmt.Printf("%f, %f (± %dm)\n", latitude, longitude, precision)
 }
 // O OMIT

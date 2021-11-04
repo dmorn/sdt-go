@@ -37,9 +37,9 @@ Our first Go project that reached production!
 3. A [Tour of Go](https://tour.golang.org/welcome/1)
 
 Optional stuff, open discussion
-- DEMO: Project structure, Tooling, $GOPATH and $GO111MODULE
-- Must-read literature for the novel Gopher
+- HANDS ON: Project structure, Tooling, $GOPATH and $GO111MODULE
 - Go @ KIM!
+- Must-read literature for the novel Gopher
 
 .image images/gopher.png _ 110
 .caption _Gopher_ by [[https://instagram.com/reneefrench][Renee French]]
@@ -95,7 +95,8 @@ From [Medium, What’s With All the Go?](https://medium.com/hashicorp-engineerin
 : Objective: Being able to READ Go code!
 
 ## Language features, condensed
-- statically typed, statically linked
+- statically typed
+- statically linked
 - native cross compilation ($GOOS, $GOARCH)
 - garbage collected
 - goroutines for concurrent programs, channels for syncronization
@@ -140,13 +141,6 @@ Concurrency 😱 But hey, slow down cowboy
 
 ## Open Discussion
 ## TERMINAL TIME
-## A must!
-.link https://pkg.go.dev
-.link https://golang.org
-.link https://golang.org/doc/effective_go
-.link https://research.swtch.com
-.link https://tour.golang.org
-
 ## Go @ KIM
 ## YouTV: cutter-uploader (Jan 2018)
 
@@ -159,3 +153,12 @@ Concurrency 😱 But hey, slow down cowboy
 ## Video-Taxi: livesub (Mar 2020)
 
 .image images/livesub.png _ 600
+
+## A must!
+.link https://pkg.go.dev
+.link https://golang.org
+.link https://golang.org/doc/effective_go
+.link https://research.swtch.com
+.link https://tour.golang.org
+.link https://play.golang.org
+
