@@ -33,11 +33,11 @@ Our first Go project that reached production!
 
 ## How we'll spend our time
 1. History
-3. Notable Go Projects
-4. A [Tour of Go](https://tour.golang.org/welcome/1)
-5. DEMO: Project structure, Tooling, $GOPATH and $GO111MODULE
+2. Notable Go Projects
+3. A [Tour of Go](https://tour.golang.org/welcome/1)
 
 Optional stuff, open discussion
+- DEMO: Project structure, Tooling, $GOPATH and $GO111MODULE
 - Must-read literature for the novel Gopher
 - Go @ KIM!
 
@@ -98,10 +98,7 @@ From [Medium, What’s With All the Go?](https://medium.com/hashicorp-engineerin
 - statically typed, statically linked
 - native cross compilation ($GOOS, $GOARCH)
 - garbage collected
-- goroutines for concurrent programs
-- memory channels for syncronization
-- implicit interfaces
-- embedding over inheritance
+- goroutines for concurrent programs, channels for syncronization
 
 ## Milestone 1: Hello main, packages and import!
 .play code/hello.go
@@ -138,9 +135,11 @@ Provide implementations (implicit!)
 
 .play -edit -numbers code/abstraction.go /MI OMIT/,/MO OMIT/
 
-## TERMINAL TIME
+## What was not covered
+Concurrency 😱 But hey, slow down cowboy
 
 ## Open Discussion
+## TERMINAL TIME
 ## A must!
 .link https://pkg.go.dev
 .link https://golang.org
