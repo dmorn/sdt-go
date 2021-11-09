@@ -1,2 +1,2 @@
 # sdt-go
-The Go programming language, some code
+Software Developer Thursday @ NOI Techpark - slides of the Go programming Language held on 4 Nov 2021
